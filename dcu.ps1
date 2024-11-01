@@ -204,3 +204,5 @@ Function Install-DCU {
         Write-Verbose "No DCU Update Available"
     }
 }
+
+Install-DCU
