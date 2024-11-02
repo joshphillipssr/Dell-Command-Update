@@ -1,3 +1,11 @@
+function Log {
+    param (
+        [string]$Text
+    )
+    $timestamp = "{0:yyyy-MM-dd HH:mm:ss}" -f [DateTime]::Now
+    Write-Output "$timestamp - $Text"
+}
+
 $ScriptVersion = '24.10.3.7'
 Write-Output "Dell Command Update Functions Loaded - Version $ScriptVersion"
 
